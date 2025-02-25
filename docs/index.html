@@ -55,10 +55,35 @@
 			font-family: 'Open Sans', sans-serif;
 		}
 
-		td {
-			color: black;
-			background-color: white;
-		}
+		table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        body:not(.darkmode) td, 
+        body:not(.darkmode) th {
+            color: black;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        body.darkmode td, 
+        body.darkmode th {
+            color: #ffffff;
+            background-color: #1e1e1e;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px;
+        }
+
+        th {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        tr:hover td {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
 
 		.markdown-section {
 			margin: 0 auto;
